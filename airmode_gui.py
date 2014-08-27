@@ -1,12 +1,3 @@
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'airmode.ui'
-#
-# Created: Wed Aug 27 12:48:05 2014
-#      by: PyQt4 UI code generator 4.9.3
-#
-# WARNING! All changes made in this file will be lost!
-
 from PyQt4 import QtCore, QtGui
 
 try:
@@ -17,7 +8,7 @@ except AttributeError:
 class Ui_Main_window(object):
     def setupUi(self, Main_window):
         Main_window.setObjectName(_fromUtf8("Main_window"))
-        Main_window.resize(640, 577)
+        Main_window.resize(648, 642)
         self.widget = QtGui.QWidget(Main_window)
         self.widget.setObjectName(_fromUtf8("widget"))
         self.gridlayout = QtGui.QGridLayout(self.widget)
@@ -29,8 +20,6 @@ class Ui_Main_window(object):
         self.gridlayout1 = QtGui.QGridLayout(self.tab)
         self.gridlayout1.setObjectName(_fromUtf8("gridlayout1"))
         self.pixmapLabel2 = QtGui.QLabel(self.tab)
-        self.pixmapLabel2.setMaximumSize(QtCore.QSize(200, 180))
-        self.pixmapLabel2.setCursor(QtGui.QCursor(QtCore.Qt.CrossCursor))
         self.pixmapLabel2.setPixmap(QtGui.QPixmap(_fromUtf8("airmode-logo.png")))
         self.pixmapLabel2.setScaledContents(True)
         self.pixmapLabel2.setWordWrap(False)
@@ -61,7 +50,7 @@ class Ui_Main_window(object):
         self.toolBox3_2 = QtGui.QToolBox(self.TabPage)
         self.toolBox3_2.setObjectName(_fromUtf8("toolBox3_2"))
         self.page1 = QtGui.QWidget()
-        self.page1.setGeometry(QtCore.QRect(0, 0, 565, 302))
+        self.page1.setGeometry(QtCore.QRect(0, 0, 608, 408))
         self.page1.setObjectName(_fromUtf8("page1"))
         self.gridlayout3 = QtGui.QGridLayout(self.page1)
         self.gridlayout3.setObjectName(_fromUtf8("gridlayout3"))
@@ -69,6 +58,10 @@ class Ui_Main_window(object):
         self.textLabel3_5_6_2_2.setWordWrap(False)
         self.textLabel3_5_6_2_2.setObjectName(_fromUtf8("textLabel3_5_6_2_2"))
         self.gridlayout3.addWidget(self.textLabel3_5_6_2_2, 1, 0, 1, 1)
+        self.textLabel3_5_6_2 = QtGui.QLabel(self.page1)
+        self.textLabel3_5_6_2.setWordWrap(False)
+        self.textLabel3_5_6_2.setObjectName(_fromUtf8("textLabel3_5_6_2"))
+        self.gridlayout3.addWidget(self.textLabel3_5_6_2, 4, 0, 1, 1)
         self.gridlayout4 = QtGui.QGridLayout()
         self.gridlayout4.setObjectName(_fromUtf8("gridlayout4"))
         self.textLabel3_4_4 = QtGui.QLabel(self.page1)
@@ -84,56 +77,10 @@ class Ui_Main_window(object):
         self.gridlayout3.addLayout(self.gridlayout4, 0, 0, 1, 1)
         self.hboxlayout = QtGui.QHBoxLayout()
         self.hboxlayout.setObjectName(_fromUtf8("hboxlayout"))
-        self.button_reload_interfaces = QtGui.QPushButton(self.page1)
-        self.button_reload_interfaces.setObjectName(_fromUtf8("button_reload_interfaces"))
-        self.hboxlayout.addWidget(self.button_reload_interfaces)
-        self.button_random_mac = QtGui.QPushButton(self.page1)
-        self.button_random_mac.setObjectName(_fromUtf8("button_random_mac"))
-        self.hboxlayout.addWidget(self.button_random_mac)
-        self.button_monitor = QtGui.QPushButton(self.page1)
-        self.button_monitor.setObjectName(_fromUtf8("button_monitor"))
-        self.hboxlayout.addWidget(self.button_monitor)
-        self.gridlayout3.addLayout(self.hboxlayout, 3, 0, 1, 1)
-        self.table_interfaces = QtGui.QTableWidget(self.page1)
-        self.table_interfaces.setObjectName(_fromUtf8("table_interfaces"))
-        self.table_interfaces.setColumnCount(5)
-        self.table_interfaces.setRowCount(0)
-        item = QtGui.QTableWidgetItem()
-        self.table_interfaces.setHorizontalHeaderItem(0, item)
-        item = QtGui.QTableWidgetItem()
-        self.table_interfaces.setHorizontalHeaderItem(1, item)
-        item = QtGui.QTableWidgetItem()
-        self.table_interfaces.setHorizontalHeaderItem(2, item)
-        item = QtGui.QTableWidgetItem()
-        self.table_interfaces.setHorizontalHeaderItem(3, item)
-        item = QtGui.QTableWidgetItem()
-        self.table_interfaces.setHorizontalHeaderItem(4, item)
-        self.gridlayout3.addWidget(self.table_interfaces, 2, 0, 1, 1)
-        self.table_networks = QtGui.QTableWidget(self.page1)
-        self.table_networks.setObjectName(_fromUtf8("table_networks"))
-        self.table_networks.setColumnCount(5)
-        self.table_networks.setRowCount(0)
-        item = QtGui.QTableWidgetItem()
-        self.table_networks.setHorizontalHeaderItem(0, item)
-        item = QtGui.QTableWidgetItem()
-        self.table_networks.setHorizontalHeaderItem(1, item)
-        item = QtGui.QTableWidgetItem()
-        self.table_networks.setHorizontalHeaderItem(2, item)
-        item = QtGui.QTableWidgetItem()
-        self.table_networks.setHorizontalHeaderItem(3, item)
-        item = QtGui.QTableWidgetItem()
-        self.table_networks.setHorizontalHeaderItem(4, item)
-        self.gridlayout3.addWidget(self.table_networks, 5, 0, 1, 1)
-        self.textLabel3_5_6_2 = QtGui.QLabel(self.page1)
-        self.textLabel3_5_6_2.setWordWrap(False)
-        self.textLabel3_5_6_2.setObjectName(_fromUtf8("textLabel3_5_6_2"))
-        self.gridlayout3.addWidget(self.textLabel3_5_6_2, 4, 0, 1, 1)
-        self.hboxlayout1 = QtGui.QHBoxLayout()
-        self.hboxlayout1.setObjectName(_fromUtf8("hboxlayout1"))
         self.textLabel1_2 = QtGui.QLabel(self.page1)
         self.textLabel1_2.setWordWrap(False)
         self.textLabel1_2.setObjectName(_fromUtf8("textLabel1_2"))
-        self.hboxlayout1.addWidget(self.textLabel1_2)
+        self.hboxlayout.addWidget(self.textLabel1_2)
         self.combo_channel = QtGui.QComboBox(self.page1)
         self.combo_channel.setMinimumSize(QtCore.QSize(100, 0))
         self.combo_channel.setObjectName(_fromUtf8("combo_channel"))
@@ -151,17 +98,17 @@ class Ui_Main_window(object):
         self.combo_channel.addItem(_fromUtf8(""))
         self.combo_channel.addItem(_fromUtf8(""))
         self.combo_channel.addItem(_fromUtf8(""))
-        self.hboxlayout1.addWidget(self.combo_channel)
+        self.hboxlayout.addWidget(self.combo_channel)
         self.textLabel2_4 = QtGui.QLabel(self.page1)
         self.textLabel2_4.setWordWrap(False)
         self.textLabel2_4.setObjectName(_fromUtf8("textLabel2_4"))
-        self.hboxlayout1.addWidget(self.textLabel2_4)
+        self.hboxlayout.addWidget(self.textLabel2_4)
         self.spin_sec = QtGui.QSpinBox(self.page1)
         self.spin_sec.setMinimum(5)
         self.spin_sec.setMaximum(200)
         self.spin_sec.setProperty("value", 10)
         self.spin_sec.setObjectName(_fromUtf8("spin_sec"))
-        self.hboxlayout1.addWidget(self.spin_sec)
+        self.hboxlayout.addWidget(self.spin_sec)
         self.button_rescan_networks = QtGui.QPushButton(self.page1)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -169,8 +116,54 @@ class Ui_Main_window(object):
         sizePolicy.setHeightForWidth(self.button_rescan_networks.sizePolicy().hasHeightForWidth())
         self.button_rescan_networks.setSizePolicy(sizePolicy)
         self.button_rescan_networks.setObjectName(_fromUtf8("button_rescan_networks"))
-        self.hboxlayout1.addWidget(self.button_rescan_networks)
-        self.gridlayout3.addLayout(self.hboxlayout1, 6, 0, 1, 1)
+        self.hboxlayout.addWidget(self.button_rescan_networks)
+        self.gridlayout3.addLayout(self.hboxlayout, 6, 0, 1, 1)
+        self.hboxlayout1 = QtGui.QHBoxLayout()
+        self.hboxlayout1.setObjectName(_fromUtf8("hboxlayout1"))
+        self.button_reload_interfaces = QtGui.QPushButton(self.page1)
+        self.button_reload_interfaces.setObjectName(_fromUtf8("button_reload_interfaces"))
+        self.hboxlayout1.addWidget(self.button_reload_interfaces)
+        self.button_random_mac = QtGui.QPushButton(self.page1)
+        self.button_random_mac.setObjectName(_fromUtf8("button_random_mac"))
+        self.hboxlayout1.addWidget(self.button_random_mac)
+        self.button_monitor = QtGui.QPushButton(self.page1)
+        self.button_monitor.setObjectName(_fromUtf8("button_monitor"))
+        self.hboxlayout1.addWidget(self.button_monitor)
+        self.gridlayout3.addLayout(self.hboxlayout1, 3, 0, 1, 1)
+        
+        
+        self.table_interfaces = QtGui.QTableWidget(self.page1)
+        self.table_interfaces.setObjectName(_fromUtf8("table_interfaces"))
+        self.table_interfaces.setColumnCount(5)
+        self.table_interfaces.setRowCount(0)
+        item = QtGui.QTableWidgetItem()
+        self.table_interfaces.setHorizontalHeaderItem(0, item)
+        item = QtGui.QTableWidgetItem()
+        self.table_interfaces.setHorizontalHeaderItem(1, item)
+        item = QtGui.QTableWidgetItem()
+        self.table_interfaces.setHorizontalHeaderItem(2, item)
+        item = QtGui.QTableWidgetItem()
+        self.table_interfaces.setHorizontalHeaderItem(3, item)
+        item = QtGui.QTableWidgetItem()
+        self.table_interfaces.setHorizontalHeaderItem(4, item)
+        self.gridlayout3.addWidget(self.table_interfaces, 2, 0, 1, 1)
+        
+        
+        self.table_networks = QtGui.QTableWidget(self.page1)
+        self.table_networks.setObjectName(_fromUtf8("table_networks"))
+        self.table_networks.setColumnCount(5)
+        self.table_networks.setRowCount(0)
+        item = QtGui.QTableWidgetItem()
+        self.table_networks.setHorizontalHeaderItem(0, item)
+        item = QtGui.QTableWidgetItem()
+        self.table_networks.setHorizontalHeaderItem(1, item)
+        item = QtGui.QTableWidgetItem()
+        self.table_networks.setHorizontalHeaderItem(2, item)
+        item = QtGui.QTableWidgetItem()
+        self.table_networks.setHorizontalHeaderItem(3, item)
+        item = QtGui.QTableWidgetItem()
+        self.table_networks.setHorizontalHeaderItem(4, item)
+        self.gridlayout3.addWidget(self.table_networks, 5, 0, 1, 1)
         self.toolBox3_2.addItem(self.page1, _fromUtf8(""))
         self.gridlayout2.addWidget(self.toolBox3_2, 0, 0, 1, 1)
         self.tabWidget2.addTab(self.TabPage, _fromUtf8(""))
@@ -180,9 +173,11 @@ class Ui_Main_window(object):
         self.gridlayout5.setObjectName(_fromUtf8("gridlayout5"))
         self.toolBox2_2 = QtGui.QToolBox(self.TabPage1)
         self.toolBox2_2.setObjectName(_fromUtf8("toolBox2_2"))
+        
         self.page11 = QtGui.QWidget()
-        self.page11.setGeometry(QtCore.QRect(0, 0, 600, 265))
+        self.page11.setGeometry(QtCore.QRect(0, 0, 196, 146))
         self.page11.setObjectName(_fromUtf8("page11"))
+        
         self.vboxlayout = QtGui.QVBoxLayout(self.page11)
         self.vboxlayout.setObjectName(_fromUtf8("vboxlayout"))
         self.buttonGroup2_3_2 = QtGui.QGroupBox(self.page11)
@@ -204,14 +199,15 @@ class Ui_Main_window(object):
         spacerItem2 = QtGui.QSpacerItem(41, 110, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         self.vboxlayout.addItem(spacerItem2)
         self.toolBox2_2.addItem(self.page11, _fromUtf8(""))
-        self.page2 = QtGui.QWidget()
-        self.page2.setGeometry(QtCore.QRect(0, 0, 451, 330))
-        self.page2.setObjectName(_fromUtf8("page2"))
-        self.gridlayout6 = QtGui.QGridLayout(self.page2)
+#        seconds page
+        self.page2_2 = QtGui.QWidget()
+        self.page2_2.setGeometry(QtCore.QRect(0, 0, 355, 320))
+        self.page2_2.setObjectName(_fromUtf8("page2_2"))
+        self.gridlayout6 = QtGui.QGridLayout(self.page2_2)
         self.gridlayout6.setObjectName(_fromUtf8("gridlayout6"))
         spacerItem3 = QtGui.QSpacerItem(41, 20, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         self.gridlayout6.addItem(spacerItem3, 3, 0, 1, 1)
-        self.buttonGroup1_2_3 = QtGui.QGroupBox(self.page2)
+        self.buttonGroup1_2_3 = QtGui.QGroupBox(self.page2_2)
         self.buttonGroup1_2_3.setObjectName(_fromUtf8("buttonGroup1_2_3"))
         self.vboxlayout3 = QtGui.QVBoxLayout(self.buttonGroup1_2_3)
         self.vboxlayout3.setObjectName(_fromUtf8("vboxlayout3"))
@@ -228,7 +224,7 @@ class Ui_Main_window(object):
         self.button_wep_arp_inj_frag.setObjectName(_fromUtf8("button_wep_arp_inj_frag"))
         self.vboxlayout3.addWidget(self.button_wep_arp_inj_frag)
         self.gridlayout6.addWidget(self.buttonGroup1_2_3, 2, 0, 1, 1)
-        self.buttonGroup1_3 = QtGui.QGroupBox(self.page2)
+        self.buttonGroup1_3 = QtGui.QGroupBox(self.page2_2)
         self.buttonGroup1_3.setObjectName(_fromUtf8("buttonGroup1_3"))
         self.vboxlayout4 = QtGui.QVBoxLayout(self.buttonGroup1_3)
         self.vboxlayout4.setObjectName(_fromUtf8("vboxlayout4"))
@@ -245,9 +241,10 @@ class Ui_Main_window(object):
         self.button_wep_arp_inj_chop.setObjectName(_fromUtf8("button_wep_arp_inj_chop"))
         self.vboxlayout4.addWidget(self.button_wep_arp_inj_chop)
         self.gridlayout6.addWidget(self.buttonGroup1_3, 1, 0, 1, 1)
-        self.toolBox2_2.addItem(self.page2, _fromUtf8(""))
+        self.toolBox2_2.addItem(self.page2_2, _fromUtf8(""))
+        
         self.page = QtGui.QWidget()
-        self.page.setGeometry(QtCore.QRect(0, 0, 262, 444))
+        self.page.setGeometry(QtCore.QRect(0, 0, 212, 432))
         self.page.setObjectName(_fromUtf8("page"))
         self.vboxlayout5 = QtGui.QVBoxLayout(self.page)
         self.vboxlayout5.setObjectName(_fromUtf8("vboxlayout5"))
@@ -301,10 +298,12 @@ class Ui_Main_window(object):
         self.textLabel6_2_2.setWordWrap(False)
         self.textLabel6_2_2.setObjectName(_fromUtf8("textLabel6_2_2"))
         self.vboxlayout8.addWidget(self.textLabel6_2_2)
+        
         self.combo_wep_mac_cfrag = QtGui.QComboBox(self.buttonGroup1_2_2_2_2_2)
         self.combo_wep_mac_cfrag.setEditable(True)
         self.combo_wep_mac_cfrag.setObjectName(_fromUtf8("combo_wep_mac_cfrag"))
         self.vboxlayout8.addWidget(self.combo_wep_mac_cfrag)
+        
         self.button_wep_autoload_clients_cfrag = QtGui.QPushButton(self.buttonGroup1_2_2_2_2_2)
         self.button_wep_autoload_clients_cfrag.setObjectName(_fromUtf8("button_wep_autoload_clients_cfrag"))
         self.vboxlayout8.addWidget(self.button_wep_autoload_clients_cfrag)
@@ -315,11 +314,13 @@ class Ui_Main_window(object):
         spacerItem4 = QtGui.QSpacerItem(41, 20, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         self.vboxlayout5.addItem(spacerItem4)
         self.toolBox2_2.addItem(self.page, _fromUtf8(""))
+        
         self.page1 = QtGui.QWidget()
-        self.page1.setGeometry(QtCore.QRect(0, 0, 288, 216))
+        self.page1.setGeometry(QtCore.QRect(0, 0, 608, 300))
         self.page1.setObjectName(_fromUtf8("page1"))
         self.vboxlayout9 = QtGui.QVBoxLayout(self.page1)
         self.vboxlayout9.setObjectName(_fromUtf8("vboxlayout9"))
+        
         self.buttonGroup1_2_2_3_2 = QtGui.QGroupBox(self.page1)
         self.buttonGroup1_2_2_3_2.setFlat(False)
         self.buttonGroup1_2_2_3_2.setCheckable(False)
@@ -369,11 +370,15 @@ class Ui_Main_window(object):
         self.gridlayout7.addWidget(self.textLabel4_4_2_3, 0, 0, 1, 1)
         self.toolBox4_2 = QtGui.QToolBox(self.TabPage2)
         self.toolBox4_2.setObjectName(_fromUtf8("toolBox4_2"))
+        
+        
         self.page21 = QtGui.QWidget()
-        self.page21.setGeometry(QtCore.QRect(0, 0, 240, 150))
+        self.page21.setGeometry(QtCore.QRect(0, 0, 196, 146))
         self.page21.setObjectName(_fromUtf8("page21"))
+        
         self.vboxlayout13 = QtGui.QVBoxLayout(self.page21)
         self.vboxlayout13.setObjectName(_fromUtf8("vboxlayout13"))
+        
         self.buttonGroup2_2_2_2 = QtGui.QGroupBox(self.page21)
         self.buttonGroup2_2_2_2.setObjectName(_fromUtf8("buttonGroup2_2_2_2"))
         self.vboxlayout14 = QtGui.QVBoxLayout(self.buttonGroup2_2_2_2)
@@ -382,6 +387,7 @@ class Ui_Main_window(object):
         self.button_wpa_start_sniff.setObjectName(_fromUtf8("button_wpa_start_sniff"))
         self.vboxlayout14.addWidget(self.button_wpa_start_sniff)
         self.vboxlayout13.addWidget(self.buttonGroup2_2_2_2)
+        
         self.buttonGroup2_2_2 = QtGui.QGroupBox(self.page21)
         self.buttonGroup2_2_2.setObjectName(_fromUtf8("buttonGroup2_2_2"))
         self.vboxlayout15 = QtGui.QVBoxLayout(self.buttonGroup2_2_2)
@@ -390,12 +396,16 @@ class Ui_Main_window(object):
         self.button_wpa_test_inj.setObjectName(_fromUtf8("button_wpa_test_inj"))
         self.vboxlayout15.addWidget(self.button_wpa_test_inj)
         self.vboxlayout13.addWidget(self.buttonGroup2_2_2)
+        ##############################################
         spacerItem6 = QtGui.QSpacerItem(41, 140, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         self.vboxlayout13.addItem(spacerItem6)
         self.toolBox4_2.addItem(self.page21, _fromUtf8(""))
+        
+        #Page2
         self.page2 = QtGui.QWidget()
-        self.page2.setGeometry(QtCore.QRect(0, 0, 478, 226))
+        self.page2.setGeometry(QtCore.QRect(0, 0, 608, 354))
         self.page2.setObjectName(_fromUtf8("page2"))
+        
         self.vboxlayout16 = QtGui.QVBoxLayout(self.page2)
         self.vboxlayout16.setObjectName(_fromUtf8("vboxlayout16"))
         self.groupBox4_2 = QtGui.QGroupBox(self.page2)
@@ -429,11 +439,30 @@ class Ui_Main_window(object):
         self.button_wpa_deauth_hand.setObjectName(_fromUtf8("button_wpa_deauth_hand"))
         self.vboxlayout17.addWidget(self.button_wpa_deauth_hand)
         self.vboxlayout16.addWidget(self.groupBox4_2)
+       
+       #im add
+        ################################################
+        
+        self.buttonGroup4_3 = QtGui.QGroupBox(self.page2)
+        self.buttonGroup4_3.setObjectName(_fromUtf8("buttonGroup4_3"))
+        self.vboxlayout17 = QtGui.QVBoxLayout(self.buttonGroup4_3)
+        self.vboxlayout17.setObjectName(_fromUtf8("vboxlayout17"))
+        self.button_wps_start = QtGui.QPushButton(self.buttonGroup4_3)
+        self.button_wps_test = QtGui.QPushButton(self.buttonGroup4_3)
+        self.button_wps_start.setObjectName(_fromUtf8("button_wps_start"))
+        self.button_wps_test.setObjectName(_fromUtf8("button_wps_test"))
+        self.vboxlayout17.addWidget(self.button_wps_start)
+        self.vboxlayout17.addWidget(self.button_wps_test)
+        self.vboxlayout16.addWidget(self.buttonGroup4_3)
+        
+        ################################################
         spacerItem7 = QtGui.QSpacerItem(20, 80, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         self.vboxlayout16.addItem(spacerItem7)
         self.toolBox4_2.addItem(self.page2, _fromUtf8(""))
         self.gridlayout7.addWidget(self.toolBox4_2, 1, 0, 1, 1)
         self.tabWidget2.addTab(self.TabPage2, _fromUtf8(""))
+       
+        #Page3
         self.TabPage3 = QtGui.QWidget()
         self.TabPage3.setObjectName(_fromUtf8("TabPage3"))
         self.gridlayout8 = QtGui.QGridLayout(self.TabPage3)
@@ -445,7 +474,7 @@ class Ui_Main_window(object):
         self.toolBox5 = QtGui.QToolBox(self.TabPage3)
         self.toolBox5.setObjectName(_fromUtf8("toolBox5"))
         self.page12 = QtGui.QWidget()
-        self.page12.setGeometry(QtCore.QRect(0, 0, 608, 325))
+        self.page12.setGeometry(QtCore.QRect(0, 0, 608, 381))
         self.page12.setObjectName(_fromUtf8("page12"))
         self.vboxlayout18 = QtGui.QVBoxLayout(self.page12)
         self.vboxlayout18.setObjectName(_fromUtf8("vboxlayout18"))
@@ -547,7 +576,7 @@ class Ui_Main_window(object):
         self.toolBox5_3 = QtGui.QToolBox(self.TabPage4)
         self.toolBox5_3.setObjectName(_fromUtf8("toolBox5_3"))
         self.page13 = QtGui.QWidget()
-        self.page13.setGeometry(QtCore.QRect(0, 0, 536, 104))
+        self.page13.setGeometry(QtCore.QRect(0, 0, 425, 101))
         self.page13.setObjectName(_fromUtf8("page13"))
         self.vboxlayout20 = QtGui.QVBoxLayout(self.page13)
         self.vboxlayout20.setObjectName(_fromUtf8("vboxlayout20"))
@@ -567,7 +596,7 @@ class Ui_Main_window(object):
         self.vboxlayout20.addItem(spacerItem9)
         self.toolBox5_3.addItem(self.page13, _fromUtf8(""))
         self.page22 = QtGui.QWidget()
-        self.page22.setGeometry(QtCore.QRect(0, 0, 313, 262))
+        self.page22.setGeometry(QtCore.QRect(0, 0, 249, 255))
         self.page22.setObjectName(_fromUtf8("page22"))
         self.gridlayout11 = QtGui.QGridLayout(self.page22)
         self.gridlayout11.setObjectName(_fromUtf8("gridlayout11"))
@@ -608,8 +637,8 @@ class Ui_Main_window(object):
         self.vboxlayout23.addWidget(self.button_crack_wpa_pyrit)
         self.gridlayout11.addWidget(self.groupBox1_3_3, 1, 0, 1, 1)
         self.toolBox5_3.addItem(self.page22, _fromUtf8(""))
-        self.page3 = QtGui.QWidget()
-        self.page3.setGeometry(QtCore.QRect(0, 0, 494, 150))
+        self.page3= QtGui.QWidget()
+        self.page3.setGeometry(QtCore.QRect(0, 0, 608, 327))
         self.page3.setObjectName(_fromUtf8("page3"))
         self.gridlayout12 = QtGui.QGridLayout(self.page3)
         self.gridlayout12.setObjectName(_fromUtf8("gridlayout12"))
@@ -668,7 +697,6 @@ class Ui_Main_window(object):
         self.hboxlayout5.addWidget(self.button_database_save)
         self.gridlayout13.addLayout(self.hboxlayout5, 2, 0, 1, 1)
         self.table_database = QtGui.QTableWidget(self.TabPage5)
-        self.table_database.setMinimumSize(QtCore.QSize(300, 200))
         self.table_database.setObjectName(_fromUtf8("table_database"))
         self.table_database.setColumnCount(5)
         self.table_database.setRowCount(0)
@@ -709,19 +737,20 @@ class Ui_Main_window(object):
         self.textLabel16.setWordWrap(False)
         self.textLabel16.setObjectName(_fromUtf8("textLabel16"))
         self.vboxlayout25.addWidget(self.textLabel16)
+        self.hboxlayout7 = QtGui.QHBoxLayout()
+        self.hboxlayout7.setMargin(8)
+        self.hboxlayout7.setObjectName(_fromUtf8("hboxlayout7"))
+        spacerItem14 = QtGui.QSpacerItem(61, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.hboxlayout7.addItem(spacerItem14)
+        self.vboxlayout25.addLayout(self.hboxlayout7)
+        self.textLabel17_2 = QtGui.QLabel(self.TabPage6)
+        self.textLabel17_2.setWordWrap(False)
+        self.textLabel17_2.setObjectName(_fromUtf8("textLabel17_2"))
+        self.vboxlayout25.addWidget(self.textLabel17_2)
+        spacerItem15 = QtGui.QSpacerItem(41, 140, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        self.vboxlayout25.addItem(spacerItem15)
         self.tabWidget2.addTab(self.TabPage6, _fromUtf8(""))
         self.gridlayout.addWidget(self.tabWidget2, 0, 0, 1, 3)
-        self.pixmapLabel1 = QtGui.QLabel(self.widget)
-        self.pixmapLabel1.setMaximumSize(QtCore.QSize(180, 40))
-        self.pixmapLabel1.setPixmap(QtGui.QPixmap(_fromUtf8("airmode-banner.png")))
-        self.pixmapLabel1.setScaledContents(True)
-        self.pixmapLabel1.setWordWrap(False)
-        self.pixmapLabel1.setObjectName(_fromUtf8("pixmapLabel1"))
-        self.gridlayout.addWidget(self.pixmapLabel1, 4, 1, 1, 1)
-        spacerItem14 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.gridlayout.addItem(spacerItem14, 4, 0, 1, 1)
-        spacerItem15 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.gridlayout.addItem(spacerItem15, 4, 2, 1, 1)
         self.text_output = QtGui.QTextEdit(self.widget)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Maximum)
         sizePolicy.setHorizontalStretch(0)
@@ -733,51 +762,111 @@ class Ui_Main_window(object):
         self.text_output.setProperty("text", _fromUtf8(""))
         self.text_output.setObjectName(_fromUtf8("text_output"))
         self.gridlayout.addWidget(self.text_output, 1, 0, 1, 3)
+        #self.pixmapLabel1 = QtGui.QLabel(self.widget)
+        #self.pixmapLabel1.setPixmap(QtGui.QPixmap(_fromUtf8("airmode-banner.png")))
+        #self.pixmapLabel1.setScaledContents(True)
+        #self.pixmapLabel1.setWordWrap(False)
+        #self.pixmapLabel1.setObjectName(_fromUtf8("pixmapLabel1"))
+        #self.gridlayout.addWidget(self.pixmapLabel1, 4, 1, 1, 1)
+        spacerItem16 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.gridlayout.addItem(spacerItem16, 4, 0, 1, 1)
+        spacerItem17 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.gridlayout.addItem(spacerItem17, 4, 2, 1, 1)
         Main_window.setCentralWidget(self.widget)
 
         self.retranslateUi(Main_window)
         self.tabWidget2.setCurrentIndex(0)
         self.toolBox3_2.setCurrentIndex(0)
-        self.toolBox2_2.setCurrentIndex(0)
-        self.toolBox4_2.setCurrentIndex(0)
+        self.toolBox2_2.setCurrentIndex(3)
+        self.toolBox4_2.setCurrentIndex(1)
         self.toolBox5.setCurrentIndex(0)
-        self.toolBox5_3.setCurrentIndex(0)
-        QtCore.QObject.connect(self.button_crack_wep_aircrack, QtCore.SIGNAL(_fromUtf8("clicked()")), Main_window.slot_crack_wep_aircrack)
-        QtCore.QObject.connect(self.button_crack_wpa_aircrack, QtCore.SIGNAL(_fromUtf8("clicked()")), Main_window.slot_crack_wpa_aircrack)
-        QtCore.QObject.connect(self.button_fake_ap_start, QtCore.SIGNAL(_fromUtf8("clicked()")), Main_window.slot_fake_ap_start)
-        QtCore.QObject.connect(self.button_gath_clean, QtCore.SIGNAL(_fromUtf8("clicked()")), Main_window.slot_gath_clean)
-        QtCore.QObject.connect(self.button_reload_interfaces, QtCore.SIGNAL(_fromUtf8("clicked()")), Main_window.slot_reload_interfaces)
-        QtCore.QObject.connect(self.button_rescan_networks, QtCore.SIGNAL(_fromUtf8("clicked()")), Main_window.slot_rescan_networks)
-        QtCore.QObject.connect(self.button_wep_start_sniff, QtCore.SIGNAL(_fromUtf8("clicked()")), Main_window.slot_start_sniffing)
-        QtCore.QObject.connect(self.button_wpa_autoload_clients, QtCore.SIGNAL(_fromUtf8("clicked()")), Main_window.slot_autoload_victim_clients)
-        QtCore.QObject.connect(self.button_wpa_deauth_hand, QtCore.SIGNAL(_fromUtf8("clicked()")), Main_window.slot_wpa_deauth_hand)
-        QtCore.QObject.connect(self.button_wpa_test_inj, QtCore.SIGNAL(_fromUtf8("clicked()")), Main_window.slot_test_inj)
-        QtCore.QObject.connect(self.combo_wpa_mac_hand, QtCore.SIGNAL(_fromUtf8("textChanged(QString)")), Main_window.slot_line_wpa_mac_hand)
-        QtCore.QObject.connect(self.line_crack_wpa_dictionary, QtCore.SIGNAL(_fromUtf8("textChanged(QString)")), Main_window.slot_line_crack_wpa_dictionary)
-        QtCore.QObject.connect(self.line_gath_logs, QtCore.SIGNAL(_fromUtf8("textChanged(QString)")), Main_window.slot_line_gath_logs)
-        QtCore.QObject.connect(self.spin_wpa_deauth_hand, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), Main_window.slot_line_wpa_deauth_hand)
-        QtCore.QObject.connect(self.button_random_mac, QtCore.SIGNAL(_fromUtf8("clicked()")), Main_window.slot_random_mac)
-        QtCore.QObject.connect(self.line_database, QtCore.SIGNAL(_fromUtf8("textChanged(QString)")), Main_window.slot_line_database)
-        QtCore.QObject.connect(self.button_database_delete, QtCore.SIGNAL(_fromUtf8("clicked()")), Main_window.slot_database_delete)
-        QtCore.QObject.connect(self.button_database_reload, QtCore.SIGNAL(_fromUtf8("clicked()")), Main_window.slot_database_reload)
-        QtCore.QObject.connect(self.button_database_save, QtCore.SIGNAL(_fromUtf8("clicked()")), Main_window.slot_database_save)
-        QtCore.QObject.connect(self.button_database_add, QtCore.SIGNAL(_fromUtf8("clicked()")), Main_window.slot_database_add)
-        QtCore.QObject.connect(self.button_monitor, QtCore.SIGNAL(_fromUtf8("clicked()")), Main_window.slot_monitor)
-        QtCore.QObject.connect(self.button_wpa_start_sniff, QtCore.SIGNAL(_fromUtf8("clicked()")), Main_window.slot_start_sniffing)
+        self.toolBox5_3.setCurrentIndex(2)
+        QtCore.QObject.connect(self.button_crack_wep_aircrack, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_crack_wep_aircrack)
+        QtCore.QObject.connect(self.button_crack_wpa_aircrack, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_crack_wpa_aircrack)
+        QtCore.QObject.connect(self.button_crack_wpa_pyrit, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_crack_wpa_pyrit)
+        QtCore.QObject.connect(self.button_crack_wpa_rainbow_tables, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_crack_wpa_rainbow_tables)
+        QtCore.QObject.connect(self.button_fake_ap_start, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_fake_ap_start)
+        QtCore.QObject.connect(self.button_gath_clean, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_gath_clean)
+        QtCore.QObject.connect(self.button_reload_interfaces, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_reload_interfaces)
+        QtCore.QObject.connect(self.button_rescan_networks, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_rescan_networks)
+        QtCore.QObject.connect(self.button_wep_arp_inj_cfrag, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_wep_arp_inj_cfrag)
+        QtCore.QObject.connect(self.button_wep_arp_inj_frag, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_wep_arp_inj_frag)
+        QtCore.QObject.connect(self.button_wep_assoc_fake_auth_frag, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_fake_auth)
+        QtCore.QObject.connect(self.button_wep_assoc_fake_auth_rep, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_fake_auth)
+        QtCore.QObject.connect(self.button_wep_assoc_fake_auth_req, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_fake_auth)
+        QtCore.QObject.connect(self.button_wep_autoload_clients_cfrag, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_autoload_victim_clients)
+        QtCore.QObject.connect(self.button_wep_capture_req, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_wep_capture_req)
+        QtCore.QObject.connect(self.button_wep_create_arp_frag, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_wep_create_arp_frag)
+        QtCore.QObject.connect(self.button_wep_start_frag, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_wep_start_frag)
+        QtCore.QObject.connect(self.button_wep_start_hirte_adhoc, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_wep_start_hirte_adhoc)
+        QtCore.QObject.connect(self.button_wep_start_hirte_ap, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_wep_start_hirte_ap)
+        QtCore.QObject.connect(self.button_wep_start_latte, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_wep_start_latte)
+        QtCore.QObject.connect(self.button_wep_start_rep, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_wep_start_rep)
+        QtCore.QObject.connect(self.button_wep_start_sniff, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_start_sniffing)
+        QtCore.QObject.connect(self.button_wep_test_inj, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_test_inj)
+        QtCore.QObject.connect(self.button_wpa_autoload_clients, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_autoload_victim_clients)
+        QtCore.QObject.connect(self.button_wpa_deauth_hand, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_wpa_deauth_hand)
+        QtCore.QObject.connect(self.button_wpa_start_sniff, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_start_sniffing)
+        QtCore.QObject.connect(self.button_wps_start, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_start_wps_attack)
+        QtCore.QObject.connect(self.button_wps_test, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_start_wps_test)
+        QtCore.QObject.connect(self.button_wpa_test_inj, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_test_inj)
+        QtCore.QObject.connect(self.combo_wep_mac_cfrag, QtCore.SIGNAL(_fromUtf8("textChanged(QString)")), self.slot_line_wep_mac_cfrag)
+        QtCore.QObject.connect(self.combo_wpa_mac_hand, QtCore.SIGNAL(_fromUtf8("textChanged(QString)")), self.slot_line_wpa_mac_hand)
+        QtCore.QObject.connect(self.line_crack_wpa_dictionary, QtCore.SIGNAL(_fromUtf8("textChanged(QString)")), self.slot_line_crack_wpa_dictionary)
+        QtCore.QObject.connect(self.line_crack_wpa_dictionary_pyrit, QtCore.SIGNAL(_fromUtf8("textChanged(QString)")), self.slot_line_crack_wpa_dictionary_pyrit)
+        QtCore.QObject.connect(self.line_crack_wpa_rainbow_tables_file, QtCore.SIGNAL(_fromUtf8("textChanged(QString)")), self.slot_line_crack_wpa_rainbow_tables_file)
+        QtCore.QObject.connect(self.line_gath_logs, QtCore.SIGNAL(_fromUtf8("textChanged(QString)")), self.slot_line_gath_logs)
+        QtCore.QObject.connect(self.spin_wep_wired_req, QtCore.SIGNAL(_fromUtf8("valueChanged(QString)")), self.slot_spin_wep_wired_req)
+        QtCore.QObject.connect(self.spin_wep_wireless_req, QtCore.SIGNAL(_fromUtf8("valueChanged(QString)")), self.slot_spin_wep_wireless_req)
+        QtCore.QObject.connect(self.spin_wpa_deauth_hand, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.slot_line_wpa_deauth_hand)
+        QtCore.QObject.connect(self.table_interfaces, QtCore.SIGNAL(_fromUtf8("itemSelectionChanged()")), self.slot_interface_selected)
+        QtCore.QObject.connect(self.table_networks, QtCore.SIGNAL(_fromUtf8("itemSelectionChanged()")), self.slot_network_selected)
+        QtCore.QObject.connect(self.button_random_mac, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_random_mac)
+        QtCore.QObject.connect(self.button_wep_arp_inj_chop, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_wep_arp_inj_chop)
+        QtCore.QObject.connect(self.button_wep_create_arp_chop, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_wep_create_arp_chop)
+        QtCore.QObject.connect(self.button_wep_start_chop, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_wep_start_chop)
+        QtCore.QObject.connect(self.button_wep_fake_auth_chop, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_fake_auth)
+        QtCore.QObject.connect(self.line_database, QtCore.SIGNAL(_fromUtf8("textChanged(QString)")), self.slot_line_database)
+        QtCore.QObject.connect(self.button_database_delete, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_database_delete)
+        QtCore.QObject.connect(self.button_database_reload, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_database_reload)
+        QtCore.QObject.connect(self.button_database_save, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_database_save)
+        QtCore.QObject.connect(self.button_database_add, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_database_add)
+        QtCore.QObject.connect(self.table_database, QtCore.SIGNAL(_fromUtf8("valueChanged(int,int)")), self.slot_database_changed)
+        QtCore.QObject.connect(self.button_monitor, QtCore.SIGNAL(_fromUtf8("clicked()")), self.slot_monitor)
         QtCore.QMetaObject.connectSlotsByName(Main_window)
-
     def retranslateUi(self, Main_window):
         Main_window.setWindowTitle(QtGui.QApplication.translate("Main_window", "AirMode", None, QtGui.QApplication.UnicodeUTF8))
-        self.textLabel1.setText(QtGui.QApplication.translate("Main_window", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600;\">Welcome to AirMode</span></p><p align=\"center\"><br/>Do you remember Gerix Wifi Cracker? We decided to fork and resume it in order<br/>to continue providing this fantastic software to everyone.</p><p align=\"center\"><br/>AirMode is a GUI that can help you to use the Aircrack framework.<br/></p><p align=\"center\"><span style=\" font-weight:600;\">Frozenbox Network (www.frozenbox.org)<br/>Parrot Security OS (www.parrotsec.org)</span></p><p align=\"center\"><span style=\" font-style:italic;\">The tool is under GPL 2 License. <br/>enJoy! </span><br/></p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
+        self.textLabel1.setText(QtGui.QApplication.translate("Main_window", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600;\">Welcome to AirMode</span></p><p align=\"center\">Do you remember Gerix Wifi Cracker? We decided to fork and resume it in order<br/>to continue providing this fantastic software to everyone.</p><p align=\"center\">AirMode is a GUI that can help you to use the Aircrack framework.<br/></p><p align=\"center\"><span style=\" font-weight:600;\">Frozenbox Network (www.frozenbox.org)<br/>Parrot Security OS (www.parrotsec.org)</span></p><p align=\"center\"><span style=\" font-style:italic;\">The tool is under GPL 2 License. <br/>enJoy! </span><br/></p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
         self.tabWidget2.setTabText(self.tabWidget2.indexOf(self.tab), QtGui.QApplication.translate("Main_window", "Welcome", None, QtGui.QApplication.UnicodeUTF8))
         self.textLabel3_5_6_2_2.setText(QtGui.QApplication.translate("Main_window", "Select the <b>interface</b>:", None, QtGui.QApplication.UnicodeUTF8))
+        self.textLabel3_5_6_2.setText(QtGui.QApplication.translate("Main_window", "Select the <b>target network</b>:", None, QtGui.QApplication.UnicodeUTF8))
         self.textLabel3_4_4.setText(QtGui.QApplication.translate("Main_window", "Directory for session files (logs, .cap, ...):", None, QtGui.QApplication.UnicodeUTF8))
+
         self.button_gath_clean.setText(QtGui.QApplication.translate("Main_window", "Clean old session files", None, QtGui.QApplication.UnicodeUTF8))
+        self.textLabel1_2.setText(QtGui.QApplication.translate("Main_window", "Channel:", None, QtGui.QApplication.UnicodeUTF8))
+        self.combo_channel.setItemText(0, QtGui.QApplication.translate("Main_window", "all channels", None, QtGui.QApplication.UnicodeUTF8))
+        self.combo_channel.setItemText(1, QtGui.QApplication.translate("Main_window", "1", None, QtGui.QApplication.UnicodeUTF8))
+        self.combo_channel.setItemText(2, QtGui.QApplication.translate("Main_window", "2", None, QtGui.QApplication.UnicodeUTF8))
+        self.combo_channel.setItemText(3, QtGui.QApplication.translate("Main_window", "3", None, QtGui.QApplication.UnicodeUTF8))
+        self.combo_channel.setItemText(4, QtGui.QApplication.translate("Main_window", "4", None, QtGui.QApplication.UnicodeUTF8))
+        self.combo_channel.setItemText(5, QtGui.QApplication.translate("Main_window", "5", None, QtGui.QApplication.UnicodeUTF8))
+        self.combo_channel.setItemText(6, QtGui.QApplication.translate("Main_window", "6", None, QtGui.QApplication.UnicodeUTF8))
+        self.combo_channel.setItemText(7, QtGui.QApplication.translate("Main_window", "7", None, QtGui.QApplication.UnicodeUTF8))
+        self.combo_channel.setItemText(8, QtGui.QApplication.translate("Main_window", "8", None, QtGui.QApplication.UnicodeUTF8))
+        self.combo_channel.setItemText(9, QtGui.QApplication.translate("Main_window", "9", None, QtGui.QApplication.UnicodeUTF8))
+        self.combo_channel.setItemText(10, QtGui.QApplication.translate("Main_window", "10", None, QtGui.QApplication.UnicodeUTF8))
+        self.combo_channel.setItemText(11, QtGui.QApplication.translate("Main_window", "11", None, QtGui.QApplication.UnicodeUTF8))
+        self.combo_channel.setItemText(12, QtGui.QApplication.translate("Main_window", "12", None, QtGui.QApplication.UnicodeUTF8))
+        self.combo_channel.setItemText(13, QtGui.QApplication.translate("Main_window", "13", None, QtGui.QApplication.UnicodeUTF8))
+        self.textLabel2_4.setText(QtGui.QApplication.translate("Main_window", "Seconds:", None, QtGui.QApplication.UnicodeUTF8))
+        self.button_rescan_networks.setText(QtGui.QApplication.translate("Main_window", "Rescan networks", None, QtGui.QApplication.UnicodeUTF8))
         self.button_reload_interfaces.setText(QtGui.QApplication.translate("Main_window", "Reload wireless interfaces", None, QtGui.QApplication.UnicodeUTF8))
         self.button_random_mac.setText(QtGui.QApplication.translate("Main_window", "Set random MAC address", None, QtGui.QApplication.UnicodeUTF8))
         self.button_monitor.setText(QtGui.QApplication.translate("Main_window", "Enable/Disable Monitor Mode", None, QtGui.QApplication.UnicodeUTF8))
+        
         item = self.table_interfaces.horizontalHeaderItem(0)
         item.setText(QtGui.QApplication.translate("Main_window", "Interfece", None, QtGui.QApplication.UnicodeUTF8))
+        
         item = self.table_interfaces.horizontalHeaderItem(1)
         item.setText(QtGui.QApplication.translate("Main_window", "MAC", None, QtGui.QApplication.UnicodeUTF8))
         item = self.table_interfaces.horizontalHeaderItem(2)
@@ -796,24 +885,7 @@ class Ui_Main_window(object):
         item.setText(QtGui.QApplication.translate("Main_window", "Signal", None, QtGui.QApplication.UnicodeUTF8))
         item = self.table_networks.horizontalHeaderItem(4)
         item.setText(QtGui.QApplication.translate("Main_window", "Enc", None, QtGui.QApplication.UnicodeUTF8))
-        self.textLabel3_5_6_2.setText(QtGui.QApplication.translate("Main_window", "Select the <b>target network</b>:", None, QtGui.QApplication.UnicodeUTF8))
-        self.textLabel1_2.setText(QtGui.QApplication.translate("Main_window", "Channel:", None, QtGui.QApplication.UnicodeUTF8))
-        self.combo_channel.setItemText(0, QtGui.QApplication.translate("Main_window", "all channels", None, QtGui.QApplication.UnicodeUTF8))
-        self.combo_channel.setItemText(1, QtGui.QApplication.translate("Main_window", "1", None, QtGui.QApplication.UnicodeUTF8))
-        self.combo_channel.setItemText(2, QtGui.QApplication.translate("Main_window", "2", None, QtGui.QApplication.UnicodeUTF8))
-        self.combo_channel.setItemText(3, QtGui.QApplication.translate("Main_window", "3", None, QtGui.QApplication.UnicodeUTF8))
-        self.combo_channel.setItemText(4, QtGui.QApplication.translate("Main_window", "4", None, QtGui.QApplication.UnicodeUTF8))
-        self.combo_channel.setItemText(5, QtGui.QApplication.translate("Main_window", "5", None, QtGui.QApplication.UnicodeUTF8))
-        self.combo_channel.setItemText(6, QtGui.QApplication.translate("Main_window", "6", None, QtGui.QApplication.UnicodeUTF8))
-        self.combo_channel.setItemText(7, QtGui.QApplication.translate("Main_window", "7", None, QtGui.QApplication.UnicodeUTF8))
-        self.combo_channel.setItemText(8, QtGui.QApplication.translate("Main_window", "8", None, QtGui.QApplication.UnicodeUTF8))
-        self.combo_channel.setItemText(9, QtGui.QApplication.translate("Main_window", "9", None, QtGui.QApplication.UnicodeUTF8))
-        self.combo_channel.setItemText(10, QtGui.QApplication.translate("Main_window", "10", None, QtGui.QApplication.UnicodeUTF8))
-        self.combo_channel.setItemText(11, QtGui.QApplication.translate("Main_window", "11", None, QtGui.QApplication.UnicodeUTF8))
-        self.combo_channel.setItemText(12, QtGui.QApplication.translate("Main_window", "12", None, QtGui.QApplication.UnicodeUTF8))
-        self.combo_channel.setItemText(13, QtGui.QApplication.translate("Main_window", "13", None, QtGui.QApplication.UnicodeUTF8))
-        self.textLabel2_4.setText(QtGui.QApplication.translate("Main_window", "Seconds:", None, QtGui.QApplication.UnicodeUTF8))
-        self.button_rescan_networks.setText(QtGui.QApplication.translate("Main_window", "Rescan networks", None, QtGui.QApplication.UnicodeUTF8))
+        
         self.toolBox3_2.setItemText(self.toolBox3_2.indexOf(self.page1), QtGui.QApplication.translate("Main_window", "General configurations and network selection.", None, QtGui.QApplication.UnicodeUTF8))
         self.tabWidget2.setTabText(self.tabWidget2.indexOf(self.TabPage), QtGui.QApplication.translate("Main_window", "Configuration", None, QtGui.QApplication.UnicodeUTF8))
         self.buttonGroup2_3_2.setTitle(QtGui.QApplication.translate("Main_window", "Functionalities", None, QtGui.QApplication.UnicodeUTF8))
@@ -831,7 +903,7 @@ class Ui_Main_window(object):
         self.button_wep_start_chop.setText(QtGui.QApplication.translate("Main_window", "Start the ChopChop attack", None, QtGui.QApplication.UnicodeUTF8))
         self.button_wep_create_arp_chop.setText(QtGui.QApplication.translate("Main_window", "Create the ARP packet to be injected on the victim access point", None, QtGui.QApplication.UnicodeUTF8))
         self.button_wep_arp_inj_chop.setText(QtGui.QApplication.translate("Main_window", "Inject the created packet on victim access point", None, QtGui.QApplication.UnicodeUTF8))
-        self.toolBox2_2.setItemText(self.toolBox2_2.indexOf(self.page2), QtGui.QApplication.translate("Main_window", "WEP Attacks (no-client)", None, QtGui.QApplication.UnicodeUTF8))
+        self.toolBox2_2.setItemText(self.toolBox2_2.indexOf(self.page2_2), QtGui.QApplication.translate("Main_window", "WEP Attacks (no-client)", None, QtGui.QApplication.UnicodeUTF8))
         self.buttonGroup1_2_2_3.setTitle(QtGui.QApplication.translate("Main_window", "ARP request replay attack", None, QtGui.QApplication.UnicodeUTF8))
         self.button_wep_assoc_fake_auth_rep.setText(QtGui.QApplication.translate("Main_window", "Associate with AP using fake auth", None, QtGui.QApplication.UnicodeUTF8))
         self.button_wep_start_rep.setText(QtGui.QApplication.translate("Main_window", "ARP request replay", None, QtGui.QApplication.UnicodeUTF8))
@@ -866,6 +938,9 @@ class Ui_Main_window(object):
         self.textLabel8_2_2.setText(QtGui.QApplication.translate("Main_window", "Add the deauth number:", None, QtGui.QApplication.UnicodeUTF8))
         self.textLabel9_2.setText(QtGui.QApplication.translate("Main_window", "Now you need to capture the HandShake, start the deauthentication.", None, QtGui.QApplication.UnicodeUTF8))
         self.button_wpa_deauth_hand.setText(QtGui.QApplication.translate("Main_window", "Client deauthentication", None, QtGui.QApplication.UnicodeUTF8))
+        self.buttonGroup4_3.setTitle(QtGui.QApplication.translate("Main_window", "WPS attack ", None, QtGui.QApplication.UnicodeUTF8))
+        self.button_wps_start.setText(QtGui.QApplication.translate("Main_window", "Start WPS attack", None, QtGui.QApplication.UnicodeUTF8))
+        self.button_wps_test.setText(QtGui.QApplication.translate("Main_window", "Start WPS test", None, QtGui.QApplication.UnicodeUTF8))
         self.toolBox4_2.setItemText(self.toolBox4_2.indexOf(self.page2), QtGui.QApplication.translate("Main_window", "WPA attacks", None, QtGui.QApplication.UnicodeUTF8))
         self.tabWidget2.setTabText(self.tabWidget2.indexOf(self.TabPage2), QtGui.QApplication.translate("Main_window", "WPA", None, QtGui.QApplication.UnicodeUTF8))
         self.textLabel4_4_2_3_2.setText(QtGui.QApplication.translate("Main_window", "<h2>Welcome in Fake Access Point Control Panel</h2>", None, QtGui.QApplication.UnicodeUTF8))
@@ -918,6 +993,7 @@ class Ui_Main_window(object):
         self.button_database_delete.setText(QtGui.QApplication.translate("Main_window", "Delete entry", None, QtGui.QApplication.UnicodeUTF8))
         self.button_database_reload.setText(QtGui.QApplication.translate("Main_window", "Reload", None, QtGui.QApplication.UnicodeUTF8))
         self.button_database_save.setText(QtGui.QApplication.translate("Main_window", "Save", None, QtGui.QApplication.UnicodeUTF8))
+        
         item = self.table_database.horizontalHeaderItem(0)
         item.setText(QtGui.QApplication.translate("Main_window", "Essid", None, QtGui.QApplication.UnicodeUTF8))
         item = self.table_database.horizontalHeaderItem(1)
@@ -928,8 +1004,230 @@ class Ui_Main_window(object):
         item.setText(QtGui.QApplication.translate("Main_window", "Key", None, QtGui.QApplication.UnicodeUTF8))
         item = self.table_database.horizontalHeaderItem(4)
         item.setText(QtGui.QApplication.translate("Main_window", "Ascii(not save)", None, QtGui.QApplication.UnicodeUTF8))
+      ######   
+        self.table_database.horizontalHeader().setStretchLastSection(True)
+       ######	
         self.tabWidget2.setTabText(self.tabWidget2.indexOf(self.TabPage5), QtGui.QApplication.translate("Main_window", "Database", None, QtGui.QApplication.UnicodeUTF8))
         self.textLabel14.setText(QtGui.QApplication.translate("Main_window", "Authors:", None, QtGui.QApplication.UnicodeUTF8))
         self.textLabel16.setText(QtGui.QApplication.translate("Main_window", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:600;\">AirMode Developers</span></p><p><span style=\" font-weight:600;\">Lisetta &quot;Sheireen&quot; Ferrero<br/></span><span style=\" font-style:italic;\">sheireen@frozenbox.org<br/>www.frozenbox.org<br/><br/></span><span style=\" font-weight:600;\">Lorenzo &quot;EclipseSpark&quot; Faletra<br/></span><span style=\" font-style:italic;\">eclipse@frozenbox.org<br/>www.frozenbox.org</span></p><p align=\"center\"><span style=\" font-size:12pt; font-weight:600;\">Original Gerix Developers</span><br/></p><p><span style=\" font-weight:600;\">Emanuele Gentili<br/></span><span style=\" font-style:italic;\">emgent@backtrack-linux.org<br/>Gerix.IT CSO and Partner<br/>http://www.gerix.it<br/><br/></span><span style=\" font-weight:600;\">Emanuele Acri<br/></span><span style=\" font-style:italic;\">crossbower@backtrack-linux.org<br/>Gerix.IT Penetration Tester<br/>http://www.backtrack.it/~crossbower/</span></p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
         self.tabWidget2.setTabText(self.tabWidget2.indexOf(self.TabPage6), QtGui.QApplication.translate("Main_window", "Credits", None, QtGui.QApplication.UnicodeUTF8))
+
+    def slot_wep_capture_req(self):
+        print ("Main_window.slot_wep_capture_req(): Not implemented yet")
+
+    def slot_crack_wpa_aircrack(self):
+        print ("Main_window.slot_crack_wpa_aircrack(): Not implemented yet")
+
+    def slot_crack_wpa_pyrit(self):
+        print ("Main_window.slot_crack_wpa_pyrit(): Not implemented yet")
+
+    def slot_mac_restore(self):
+        print ("Main_window.slot_mac_restore(): Not implemented yet")
+
+    def slot_monitor_on(self):
+        print ("Main_window.slot_monitor_on(): Not implemented yet")
+
+    def slot_net_map_on(self):
+        print ("Main_window.slot_net_map_on(): Not implemented yet")
+
+    def slot_wep_arp_inj_cfrag(self):
+        print ("Main_window.slot_wep_arp_inj_cfrag(): Not implemented yet")
+
+    def slot_wep_arp_inj_chop(self):
+        print ("Main_window.slot_wep_arp_inj_chop(): Not implemented yet")
+
+    def slot_wep_arp_inj_frag(self):
+        print ("Main_window.slot_wep_arp_inj_frag(): Not implemented yet")
+
+    def slot_wep_create_arp_cfrag(self):
+        print ("Main_window.slot_wep_create_arp_cfrag(): Not implemented yet")
+
+    def slot_wep_create_arp_chop(self):
+        print ("Main_window.slot_wep_create_arp_chop(): Not implemented yet")
+
+    def slot_wep_create_arp_frag(self):
+        print ("Main_window.slot_wep_create_arp_frag(): Not implemented yet")
+
+    def slot_wep_start_chop(self):
+        print ("Main_window.slot_wep_start_chop(): Not implemented yet")
+
+    def slot_wep_start_frag(self):
+        print ("Main_window.slot_wep_start_frag(): Not implemented yet")
+
+    def slot_wep_start_rep(self):
+        print ("Main_window.slot_wep_start_rep(): Not implemented yet")
+
+    def slot_wep_test_inj(self):
+        print ("Main_window.slot_wep_test_inj(): Not implemented yet")
+
+    def slot_wpa_deauth_hand(self):
+        print ("Main_window.slot_wpa_deauth_hand(): Not implemented yet")
+
+    def slot_wpa_start_sniff_hand(self):
+        print ("Main_window.slot_wpa_start_sniff_hand(): Not implemented yet")
+
+    def slot_crack_wep_aircrack(self):
+        print ("Main_window.slot_crack_wep_aircrack(): Not implemented yet")
+
+    def slot_crack_wpa_rainbow_tables(self):
+        print ("Main_window.slot_crack_wpa_rainbow_tables(): Not implemented yet")
+
+    def slot_wep_start_hirte_adhoc(self):
+        print ("Main_window.slot_wep_start_hirte_adhoc(): Not implemented yet")
+
+    def slot_wep_start_hirte_ap(self):
+        print ("Main_window.slot_wep_start_hirte_ap(): Not implemented yet")
+
+    def slot_wep_start_latte(self):
+        print ("Main_window.slot_wep_start_latte(): Not implemented yet")
+
+    def slot_mac_change(self):
+        print ("Main_window.slot_mac_change(): Not implemented yet")
+
+    def slot_gath_int(self):
+        print ("Main_window.slot_gath_int(): Not implemented yet")
+
+    def slot_save_ap_name(self):
+        print ("Main_window.slot_save_ap_name(): Not implemented yet")
+
+    def slot_save_mon(self):
+        print ("Main_window.slot_save_mon(): Not implemented yet")
+
+    def slot_save_mon_mac(self):
+        print ("Main_window.slot_save_mon_mac(): Not implemented yet")
+
+    def slot_line_crack_wep_log(self):
+        print ("Main_window.slot_line_crack_wep_log(): Not implemented yet")
+
+    def slot_line_crack_wpa_dictionary(self):
+        print ("Main_window.slot_line_crack_wpa_dictionary(): Not implemented yet")
+
+    def slot_line_crack_wpa_dictionary_pyrit(self):
+        print ("Main_window.slot_line_crack_wpa_dictionary_pyrit(): Not implemented yet")
+
+    def slot_line_crack_wpa_log_pyrit(self):
+        print ("Main_window.slot_line_crack_wpa_log_pyrit(): Not implemented yet")
+
+    def slot_line_crack_wpa_rainbow_tables_file(self):
+        print ("Main_window.slot_line_crack_wpa_rainbow_tables_file(): Not implemented yet")
+
+    def slot_line_gath_logs(self):
+        print ("Main_window.slot_line_gath_logs(): Not implemented yet")
+
+    def slot_line_mac_change_int(self):
+        print ("Main_window.slot_line_mac_change_int(): Not implemented yet")
+
+    def slot_line_mac_change_mac(self):
+        print ("Main_window.slot_line_mac_change_mac(): Not implemented yet")
+
+    def slot_line_wep_mac_cfrag(self):
+        print ("Main_window.slot_line_wep_mac_cfrag(): Not implemented yet")
+
+    def slot_line_wpa_mac_hand(self):
+        print ("Main_window.slot_line_wpa_mac_hand(): Not implemented yet")
+
+    def slot_spin_wep_wired_req(self):
+        print ("Main_window.slot_spin_wep_wired_req(): Not implemented yet")
+
+    def slot_spin_wep_wireless_req(self):
+        print ("Main_window.slot_spin_wep_wireless_req(): Not implemented yet")
+
+    def slot_line_wpa_deauth_hand(self):
+        print ("Main_window.slot_line_wpa_deauth_hand(): Not implemented yet")
+
+    def slot_start_sniffing(self):
+        print ("Main_window.slot_start_sniffing(): Not implemented yet")
+        
+    def slot_start_wps_attack(self):
+        print ("Main_window.slot_start_wps_attack(): Not implemented yet")
+        
+    def slot_start_wps_test(self):
+        print ("Main_window.slot_start_wps_test(): Not implemented yet")       
+
+    def slot_autoload_ap_info(self):
+        print ("Main_window.slot_autoload_ap_info(): Not implemented yet")
+
+    def slot_gath_clean(self):
+        print ("Main_window.slot_gath_clean(): Not implemented yet")
+
+    def slot_enable_ip_forward(self):
+        print ("Main_window.slot_enable_ip_forward(): Not implemented yet")
+
+    def slot_fake_ap_start(self):
+        print ("Main_window.slot_fake_ap_start(): Not implemented yet")
+
+    def slot_save_ap_mac(self):
+        print ("Main_window.slot_save_ap_mac(): Not implemented yet")
+
+    def slot_save_ap_chan(self):
+        print ("Main_window.slot_save_ap_chan(): Not implemented yet")
+
+    def slot_reload_interfaces(self):
+        print ("Main_window.slot_reload_interfaces(): Not implemented yet")
+
+    def slot_autoload_victim_clients(self):
+        print ("Main_window.slot_autoload_victim_clients(): Not implemented yet")
+
+    def slot_rescan_networks(self):
+        print ("Main_window.slot_rescan_networks(): Not implemented yet")
+
+    def slot_interface_selected(self):
+        print ("Main_window.slot_interface_selected(): Not implemented yet")
+
+    def slot_network_selected(self):
+        print ("Main_window.slot_network_selected(): Not implemented yet")
+
+    def slot_disable_ip_forward(self):
+        print ("Main_window.slot_disable_ip_forward(): Not implemented yet")
+
+    def slot_random_mac(self):
+        print ("Main_window.slot_random_mac(): Not implemented yet")
+
+    def slot_line_database(self):
+        print ("Main_window.slot_line_database(): Not implemented yet")
+
+    def slot_database_delete(self):
+        print ("Main_window.slot_database_delete(): Not implemented yet")
+
+    def slot_database_reload(self):
+        print ("Main_window.slot_database_reload(): Not implemented yet")
+
+    def slot_database_save(self):
+        print ("Main_window.slot_database_save(): Not implemented yet")
+
+    def slot_database_add(self):
+        print ("Main_window.slot_database_add(): Not implemented yet")
+
+    def slot_database_changed(self):
+        print ("Main_window.slot_database_changed(): Not implemented yet")
+
+    def slot_fake_auth(self):
+        print ("Main_window.slot_fake_auth(): Not implemented yet")
+
+    def slot_wep_client_frag(self):
+        print ("Main_window.slot_wep_client_frag(): Not implemented yet")
+
+    def slot_test_inj(self):
+        print ("Main_window.slot_test_inj(): Not implemented yet")
+
+    def slot_monitor(self):
+        print ("Main_window.slot_monitor(): Not implemented yet")
+
+#    def __tr(self,s,c = None):
+#        return qApp.translate("Main_window",s,c)
+
+
+
+
+
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtGui.QApplication(sys.argv)
+    Main_window = QtGui.QMainWindow()
+    ui = Ui_Main_window()
+    ui.setupUi(Main_window)
+    Main_window.show()
+    sys.exit(app.exec_())
 

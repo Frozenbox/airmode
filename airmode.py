@@ -11,7 +11,7 @@ import binascii
 
 from threading import Thread
 from PyQt4 import QtGui, QtCore
-from airmode_gui import *
+from airmode_gui import Ui_Main_window
 #from PyQt4.QtGui import QApplication
 from PyQt4.QtGui import QMainWindow
 from airmode_config import *
@@ -1166,10 +1166,13 @@ class Main_window_ex(QMainWindow, Ui_Main_window):
         self.line_gath_logs.setText(config_dir)
 
         # Wireless interfaces
-        self.slot_reload_interfaces()        
+        self.slot_reload_interfaces()
+        print "interface reloaded"      
         if selected_interface != '':
-            self.periferica = selected_interface
-            self.select_interface(selected_interface)
+			print "interface not empty"
+			self.periferica = selected_interface
+			print "selecting "+selected_interface
+			self.select_interface(selected_interface)
             
 
         # Various directories
@@ -1194,7 +1197,7 @@ def init_config_dir():
     # check config dir
     if not os.path.exists(config_dir):
         os.mkdir(config_dir)    
-        #subprocess.getstatusoutput('zenity --info --window-icon=/usr/local/buc/icons/attenzione.png --title="AirMode" --text="Hello and Thanks for using AirMode this is the first run, and ~/.airmode-wifi is now created."')
+        #subprocess.getstatusoutput('zenity --info --window-icon=/usr/local/buc/icons/attenzione.png --title="AirMode" --text="Hello and Thanks for using AirMode this is the first run, and ~/.airmode is now created."')
 
     print ('\nConfig directory OK\n')
 
