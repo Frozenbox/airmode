@@ -49,7 +49,7 @@ config_dir = str(home_dir )+ '/.airmode/'
 # Default color terminal:
 # def_term = 'xterm'
 #
-def_term = 'mate-terminal'
+def_term = 'xterm'
 
 
 

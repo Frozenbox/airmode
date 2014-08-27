@@ -7,18 +7,18 @@
     <x>0</x>
     <y>0</y>
     <width>640</width>
-    <height>728</height>
+    <height>577</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Gerix wifi cracker</string>
+   <string>AirMode</string>
   </property>
   <widget class="QWidget" name="widget">
    <layout class="QGridLayout">
     <item row="0" column="0" colspan="3">
      <widget class="QTabWidget" name="tabWidget2">
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -27,6 +27,12 @@
        <layout class="QGridLayout">
         <item row="0" column="1">
          <widget class="QLabel" name="pixmapLabel2">
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>180</height>
+           </size>
+          </property>
           <property name="cursor">
            <cursorShape>CrossCursor</cursorShape>
           </property>
@@ -122,7 +128,7 @@
              <x>0</x>
              <y>0</y>
              <width>600</width>
-             <height>518</height>
+             <height>376</height>
             </rect>
            </property>
            <attribute name="label">
@@ -133,16 +139,6 @@
              <widget class="QLabel" name="textLabel3_5_6_2_2">
               <property name="text">
                <string>Select the &lt;b&gt;interface&lt;/b&gt;:</string>
-              </property>
-              <property name="wordWrap">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="4" column="0">
-             <widget class="QLabel" name="textLabel3_5_6_2">
-              <property name="text">
-               <string>Select the &lt;b&gt;target network&lt;/b&gt;:</string>
               </property>
               <property name="wordWrap">
                <bool>false</bool>
@@ -172,6 +168,99 @@
                </widget>
               </item>
              </layout>
+            </item>
+            <item row="3" column="0">
+             <layout class="QHBoxLayout">
+              <item>
+               <widget class="QPushButton" name="button_reload_interfaces">
+                <property name="text">
+                 <string>Reload wireless interfaces</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="button_random_mac">
+                <property name="text">
+                 <string>Set random MAC address</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="button_monitor">
+                <property name="text">
+                 <string>Enable/Disable Monitor Mode</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="2" column="0">
+             <widget class="QTableWidget" name="table_interfaces">
+              <column>
+               <property name="text">
+                <string>Interfece</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>MAC</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Chipset</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Driver</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Mode</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QTableWidget" name="table_networks">
+              <column>
+               <property name="text">
+                <string>Essid</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Bssid</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Channel</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Signal</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Enc</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="textLabel3_5_6_2">
+              <property name="text">
+               <string>Select the &lt;b&gt;target network&lt;/b&gt;:</string>
+              </property>
+              <property name="wordWrap">
+               <bool>false</bool>
+              </property>
+             </widget>
             </item>
             <item row="6" column="0">
              <layout class="QHBoxLayout">
@@ -303,89 +392,6 @@
               </item>
              </layout>
             </item>
-            <item row="3" column="0">
-             <layout class="QHBoxLayout">
-              <item>
-               <widget class="QPushButton" name="button_reload_interfaces">
-                <property name="text">
-                 <string>Reload wireless interfaces</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="button_random_mac">
-                <property name="text">
-                 <string>Set random MAC address</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="button_monitor">
-                <property name="text">
-                 <string>Enable/Disable Monitor Mode</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item row="2" column="0">
-             <widget class="QTableWidget" name="table_interfaces_2">
-              <column>
-               <property name="text">
-                <string>Interfece</string>
-               </property>
-              </column>
-              <column>
-               <property name="text">
-                <string>MAC</string>
-               </property>
-              </column>
-              <column>
-               <property name="text">
-                <string>Chipset</string>
-               </property>
-              </column>
-              <column>
-               <property name="text">
-                <string>Driver</string>
-               </property>
-              </column>
-              <column>
-               <property name="text">
-                <string>Mode</string>
-               </property>
-              </column>
-             </widget>
-            </item>
-            <item row="5" column="0">
-             <widget class="QTableWidget" name="table_networks_2">
-              <column>
-               <property name="text">
-                <string>Essid</string>
-               </property>
-              </column>
-              <column>
-               <property name="text">
-                <string>Bssid</string>
-               </property>
-              </column>
-              <column>
-               <property name="text">
-                <string>Channel</string>
-               </property>
-              </column>
-              <column>
-               <property name="text">
-                <string>Signal</string>
-               </property>
-              </column>
-              <column>
-               <property name="text">
-                <string>Enc</string>
-               </property>
-              </column>
-             </widget>
-            </item>
            </layout>
           </widget>
          </widget>
@@ -408,7 +414,7 @@
              <x>0</x>
              <y>0</y>
              <width>600</width>
-             <height>407</height>
+             <height>265</height>
             </rect>
            </property>
            <attribute name="label">
@@ -870,7 +876,7 @@
              <x>0</x>
              <y>0</y>
              <width>600</width>
-             <height>463</height>
+             <height>321</height>
             </rect>
            </property>
            <attribute name="label">
@@ -1055,7 +1061,7 @@
              <x>0</x>
              <y>0</y>
              <width>608</width>
-             <height>475</height>
+             <height>333</height>
             </rect>
            </property>
            <attribute name="label">
@@ -1282,15 +1288,15 @@
         <item row="1" column="0">
          <widget class="QToolBox" name="toolBox5_3">
           <property name="currentIndex">
-           <number>2</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="page1">
            <property name="geometry">
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>536</width>
-             <height>104</height>
+             <width>600</width>
+             <height>293</height>
             </rect>
            </property>
            <attribute name="label">
@@ -1445,8 +1451,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>600</width>
-             <height>435</height>
+             <width>494</width>
+             <height>150</height>
             </rect>
            </property>
            <attribute name="label">
@@ -1576,6 +1582,12 @@
         </item>
         <item row="1" column="0">
          <widget class="QTableWidget" name="table_database">
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>200</height>
+           </size>
+          </property>
           <column>
            <property name="text">
             <string>Essid</string>
@@ -1676,50 +1688,18 @@
           </property>
          </widget>
         </item>
-        <item>
-         <spacer name="spacer41">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeType">
-           <enum>QSizePolicy::Expanding</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>41</width>
-            <height>140</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
        </layout>
       </widget>
      </widget>
     </item>
-    <item row="1" column="0" colspan="3">
-     <widget class="QTextEdit" name="text_output">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>32767</width>
-        <height>100</height>
-       </size>
-      </property>
-      <property name="readOnly">
-       <bool>true</bool>
-      </property>
-      <property name="text" stdset="0">
-       <string/>
-      </property>
-     </widget>
-    </item>
     <item row="4" column="1">
      <widget class="QLabel" name="pixmapLabel1">
+      <property name="maximumSize">
+       <size>
+        <width>180</width>
+        <height>40</height>
+       </size>
+      </property>
       <property name="pixmap">
        <pixmap>airmode-banner.png</pixmap>
       </property>
@@ -1756,6 +1736,28 @@
        </size>
       </property>
      </spacer>
+    </item>
+    <item row="1" column="0" colspan="3">
+     <widget class="QTextEdit" name="text_output">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>32767</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="text" stdset="0">
+       <string/>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>

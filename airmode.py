@@ -1,4 +1,4 @@
-#!usr/bin/python
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
 import os
@@ -672,13 +672,13 @@ class Main_window_ex(QMainWindow, Ui_Main_window):
     #
     def select_interface(self, interface):
         
-        numrows = self.table_interfaces_2.rowCount()
+        numrows = self.table_interfaces.rowCount()
 
         for i in range(0, numrows):
-            if str(self.table_interfaces_2.text(i, 0)) == interface:
-                self.table_interfaces_2.clearSelection()
-                self.table_interfaces_2.selectRow(i)
-                self.table_interfaces_2.repaintSelections()
+            if str(self.table_interfaces.text(i, 0)) == interface:
+                self.table_interfaces.clearSelection()
+                self.table_interfaces.selectRow(i)
+                self.table_interfaces.repaintSelections()
                 return
 
     #
@@ -687,9 +687,9 @@ class Main_window_ex(QMainWindow, Ui_Main_window):
     def slot_reload_interfaces(self):
         
         # clear
-        numrows = self.table_interfaces_2.rowCount()
+        numrows = self.table_interfaces.rowCount()
         for i in range(0, numrows):
-            self.table_interfaces_2.removeRow(0)
+            self.table_interfaces.removeRow(0)
         
         # load interfaces
         airmon = commands.getoutput("airmon-ng | egrep -e '^[a-z]{2,4}[0-9]'")
@@ -709,33 +709,33 @@ class Main_window_ex(QMainWindow, Ui_Main_window):
             # fill table
             
             
-            self.table_interfaces_2.insertRow(0)
+            self.table_interfaces.insertRow(0)
             item=QtGui.QTableWidgetItem()
             item.setFlags(QtCore.Qt.ItemIsSelectable|QtCore.Qt.ItemIsEnabled)
             item.setText(intf[0])
-            self.table_interfaces_2.setItem(0, 0,item )
+            self.table_interfaces.setItem(0, 0,item )
             
             item=QtGui.QTableWidgetItem()
             item.setFlags(QtCore.Qt.ItemIsSelectable|QtCore.Qt.ItemIsEnabled)
             item.setText(current_mac)
-            self.table_interfaces_2.setItem(0, 1,item )
+            self.table_interfaces.setItem(0, 1,item )
             
             item=QtGui.QTableWidgetItem()
             item.setFlags(QtCore.Qt.ItemIsSelectable|QtCore.Qt.ItemIsEnabled)
             item.setText(intf[2])
-            self.table_interfaces_2.setItem(0, 2,item )
+            self.table_interfaces.setItem(0, 2,item )
             
             item=QtGui.QTableWidgetItem()
             item.setFlags(QtCore.Qt.ItemIsSelectable|QtCore.Qt.ItemIsEnabled)
             item.setText((intf[3]))
-            self.table_interfaces_2.setItem(0, 3,item )
+            self.table_interfaces.setItem(0, 3,item )
 
             item=QtGui.QTableWidgetItem()
             item.setFlags(QtCore.Qt.ItemIsSelectable|QtCore.Qt.ItemIsEnabled)
             item.setText(mode)
-            self.table_interfaces_2.setItem(0, 4,item )
+            self.table_interfaces.setItem(0, 4,item )
 
-        self.table_interfaces_2.clearSelection()
+        self.table_interfaces.clearSelection()
 
 
     #
@@ -747,9 +747,9 @@ class Main_window_ex(QMainWindow, Ui_Main_window):
             return
         
         # clear
-        numrows = self.table_networks_2.rowCount()
+        numrows = self.table_networks.rowCount()
         for i in range(0, numrows):
-            self.table_networks_2.removeRow(0)
+            self.table_networks.removeRow(0)
 
         # Prepare the command
         scan_command = 'airodump-ng --output-format csv --write /tmp/airmode-scan '
@@ -796,39 +796,39 @@ class Main_window_ex(QMainWindow, Ui_Main_window):
             pwr     = match.group(7)
             essid   = match.group(8)
 
-            self.table_networks_2.insertRow(order_id)
+            self.table_networks.insertRow(order_id)
             item=QtGui.QTableWidgetItem()
             item.setFlags(QtCore.Qt.ItemIsSelectable|QtCore.Qt.ItemIsEnabled)
             item.setText(QtGui.QApplication.translate("Main_window", essid, None, QtGui.QApplication.UnicodeUTF8))
-            self.table_networks_2.setItem(order_id, 0,item )
+            self.table_networks.setItem(order_id, 0,item )
             item=QtGui.QTableWidgetItem(bssid)
             item.setFlags(QtCore.Qt.ItemIsSelectable|QtCore.Qt.ItemIsEnabled)
             item.setText(bssid)
-            self.table_networks_2.setItem(order_id, 1,item)
+            self.table_networks.setItem(order_id, 1,item)
         
             item=QtGui.QTableWidgetItem()
             item.setFlags(QtCore.Qt.ItemIsSelectable|QtCore.Qt.ItemIsEnabled)
             item.setText(channel)
-            self.table_networks_2.setItem(order_id, 2,item)
+            self.table_networks.setItem(order_id, 2,item)
         
             item=QtGui.QTableWidgetItem()
             item.setFlags(QtCore.Qt.ItemIsSelectable|QtCore.Qt.ItemIsEnabled)
             item.setText(pwr)
-            self.table_networks_2.setItem(order_id, 3,item)
+            self.table_networks.setItem(order_id, 3,item)
         
             item=QtGui.QTableWidgetItem()
             item.setFlags(QtCore.Qt.ItemIsSelectable|QtCore.Qt.ItemIsEnabled)
             item.setText(enc + ' ' + cipher + ' ' + auth)
-            self.table_networks_2.setItem(order_id, 4, item)
+            self.table_networks.setItem(order_id, 4, item)
         
             item=QtGui.QTableWidgetItem()
             item.setFlags(QtCore.Qt.ItemIsSelectable|QtCore.Qt.ItemIsEnabled)
             item.setText(mb)
-            self.table_networks_2.setItem(order_id, 5,item)
+            self.table_networks.setItem(order_id, 5,item)
 
             order_id=order_id+1
 
-        self.table_networks_2.clearSelection()
+        self.table_networks.clearSelection()
         commands.getstatusoutput('rm /tmp/airmode-scan*')
 
     #
@@ -993,7 +993,7 @@ class Main_window_ex(QMainWindow, Ui_Main_window):
 
         # read GUI table
         numrows = self.table_database.rowCount()
-#        self.periferica = str((self.table_interfaces_2.item(selrow, 0)).text())
+#        self.periferica = str((self.table_interfaces.item(selrow, 0)).text())
         for i in range(0, numrows):
             essid   = str((self.table_database.item(i, 0)).text())
             bssid   = str((self.table_database.item(i, 1)).text())
@@ -1024,7 +1024,7 @@ class Main_window_ex(QMainWindow, Ui_Main_window):
         self.periferica = str(self.combo_gath_int.currentText())
 
     def slot_interface_selected(self):
-        selrow = self.table_interfaces_2.currentRow()
+        selrow = self.table_interfaces.currentRow()
         
         if selrow == -1:
             self.periferica = ''
@@ -1033,10 +1033,10 @@ class Main_window_ex(QMainWindow, Ui_Main_window):
             self.intf_mode  = ''
             return
 
-        self.periferica = str((self.table_interfaces_2.item(selrow, 0)).text())
-        self.mymon      = str((self.table_interfaces_2.item(selrow, 0)).text())
-        self.mymac      = str((self.table_interfaces_2.item(selrow, 1)).text())
-        self.intf_mode  = str((self.table_interfaces_2.item(selrow, 4)).text())
+        self.periferica = str((self.table_interfaces.item(selrow, 0)).text())
+        self.mymon      = str((self.table_interfaces.item(selrow, 0)).text())
+        self.mymac      = str((self.table_interfaces.item(selrow, 1)).text())
+        self.intf_mode  = str((self.table_interfaces.item(selrow, 4)).text())
         
         #self.change_mac_int = self.mymon
         #self.line_mac_change_int.setText(self.mymon)
@@ -1044,13 +1044,13 @@ class Main_window_ex(QMainWindow, Ui_Main_window):
         #self.line_mac_change_mac.setText(self.mymac )
 
     def slot_network_selected(self):
-        selrow = self.table_networks_2.currentRow()
+        selrow = self.table_networks.currentRow()
         if selrow == -1:
             return
 
-        self.essid  = str((self.table_networks_2.item(selrow, 0)).text())
-        self.ac     = str((self.table_networks_2.item(selrow, 1)).text())
-        self.canale = str((self.table_networks_2.item(selrow, 2)).text())
+        self.essid  = str((self.table_networks.item(selrow, 0)).text())
+        self.ac     = str((self.table_networks.item(selrow, 1)).text())
+        self.canale = str((self.table_networks.item(selrow, 2)).text())
 
         #print self.essid + " " + self.ac + " " + self.canale
     
@@ -1181,8 +1181,8 @@ class Main_window_ex(QMainWindow, Ui_Main_window):
         self.slot_line_wpa_deauth_hand()
 
         # Tables
-        self.table_interfaces_2.clearSelection()
-        self.table_networks_2.clearSelection()
+        self.table_interfaces.clearSelection()
+        self.table_networks.clearSelection()
 
 
 #
