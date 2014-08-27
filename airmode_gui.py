@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'airmode.ui'
 #
-# Created: Wed Aug 27 12:47:10 2014
+# Created: Wed Aug 27 12:48:05 2014
 #      by: PyQt4 UI code generator 4.9.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -61,7 +61,7 @@ class Ui_Main_window(object):
         self.toolBox3_2 = QtGui.QToolBox(self.TabPage)
         self.toolBox3_2.setObjectName(_fromUtf8("toolBox3_2"))
         self.page1 = QtGui.QWidget()
-        self.page1.setGeometry(QtCore.QRect(0, 0, 600, 376))
+        self.page1.setGeometry(QtCore.QRect(0, 0, 565, 302))
         self.page1.setObjectName(_fromUtf8("page1"))
         self.gridlayout3 = QtGui.QGridLayout(self.page1)
         self.gridlayout3.setObjectName(_fromUtf8("gridlayout3"))
@@ -370,7 +370,7 @@ class Ui_Main_window(object):
         self.toolBox4_2 = QtGui.QToolBox(self.TabPage2)
         self.toolBox4_2.setObjectName(_fromUtf8("toolBox4_2"))
         self.page21 = QtGui.QWidget()
-        self.page21.setGeometry(QtCore.QRect(0, 0, 600, 321))
+        self.page21.setGeometry(QtCore.QRect(0, 0, 240, 150))
         self.page21.setObjectName(_fromUtf8("page21"))
         self.vboxlayout13 = QtGui.QVBoxLayout(self.page21)
         self.vboxlayout13.setObjectName(_fromUtf8("vboxlayout13"))
@@ -445,7 +445,7 @@ class Ui_Main_window(object):
         self.toolBox5 = QtGui.QToolBox(self.TabPage3)
         self.toolBox5.setObjectName(_fromUtf8("toolBox5"))
         self.page12 = QtGui.QWidget()
-        self.page12.setGeometry(QtCore.QRect(0, 0, 608, 333))
+        self.page12.setGeometry(QtCore.QRect(0, 0, 608, 325))
         self.page12.setObjectName(_fromUtf8("page12"))
         self.vboxlayout18 = QtGui.QVBoxLayout(self.page12)
         self.vboxlayout18.setObjectName(_fromUtf8("vboxlayout18"))
@@ -547,7 +547,7 @@ class Ui_Main_window(object):
         self.toolBox5_3 = QtGui.QToolBox(self.TabPage4)
         self.toolBox5_3.setObjectName(_fromUtf8("toolBox5_3"))
         self.page13 = QtGui.QWidget()
-        self.page13.setGeometry(QtCore.QRect(0, 0, 600, 293))
+        self.page13.setGeometry(QtCore.QRect(0, 0, 536, 104))
         self.page13.setObjectName(_fromUtf8("page13"))
         self.vboxlayout20 = QtGui.QVBoxLayout(self.page13)
         self.vboxlayout20.setObjectName(_fromUtf8("vboxlayout20"))
@@ -736,7 +736,7 @@ class Ui_Main_window(object):
         Main_window.setCentralWidget(self.widget)
 
         self.retranslateUi(Main_window)
-        self.tabWidget2.setCurrentIndex(2)
+        self.tabWidget2.setCurrentIndex(0)
         self.toolBox3_2.setCurrentIndex(0)
         self.toolBox2_2.setCurrentIndex(0)
         self.toolBox4_2.setCurrentIndex(0)
