@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'airmode.ui'
 #
-# Created: Wed Aug 27 12:39:58 2014
+# Created: Wed Aug 27 12:47:10 2014
 #      by: PyQt4 UI code generator 4.9.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -181,7 +181,7 @@ class Ui_Main_window(object):
         self.toolBox2_2 = QtGui.QToolBox(self.TabPage1)
         self.toolBox2_2.setObjectName(_fromUtf8("toolBox2_2"))
         self.page11 = QtGui.QWidget()
-        self.page11.setGeometry(QtCore.QRect(0, 0, 240, 150))
+        self.page11.setGeometry(QtCore.QRect(0, 0, 600, 265))
         self.page11.setObjectName(_fromUtf8("page11"))
         self.vboxlayout = QtGui.QVBoxLayout(self.page11)
         self.vboxlayout.setObjectName(_fromUtf8("vboxlayout"))
@@ -370,7 +370,7 @@ class Ui_Main_window(object):
         self.toolBox4_2 = QtGui.QToolBox(self.TabPage2)
         self.toolBox4_2.setObjectName(_fromUtf8("toolBox4_2"))
         self.page21 = QtGui.QWidget()
-        self.page21.setGeometry(QtCore.QRect(0, 0, 240, 150))
+        self.page21.setGeometry(QtCore.QRect(0, 0, 600, 321))
         self.page21.setObjectName(_fromUtf8("page21"))
         self.vboxlayout13 = QtGui.QVBoxLayout(self.page21)
         self.vboxlayout13.setObjectName(_fromUtf8("vboxlayout13"))
@@ -445,7 +445,7 @@ class Ui_Main_window(object):
         self.toolBox5 = QtGui.QToolBox(self.TabPage3)
         self.toolBox5.setObjectName(_fromUtf8("toolBox5"))
         self.page12 = QtGui.QWidget()
-        self.page12.setGeometry(QtCore.QRect(0, 0, 608, 325))
+        self.page12.setGeometry(QtCore.QRect(0, 0, 608, 333))
         self.page12.setObjectName(_fromUtf8("page12"))
         self.vboxlayout18 = QtGui.QVBoxLayout(self.page12)
         self.vboxlayout18.setObjectName(_fromUtf8("vboxlayout18"))
@@ -547,7 +547,7 @@ class Ui_Main_window(object):
         self.toolBox5_3 = QtGui.QToolBox(self.TabPage4)
         self.toolBox5_3.setObjectName(_fromUtf8("toolBox5_3"))
         self.page13 = QtGui.QWidget()
-        self.page13.setGeometry(QtCore.QRect(0, 0, 536, 104))
+        self.page13.setGeometry(QtCore.QRect(0, 0, 600, 293))
         self.page13.setObjectName(_fromUtf8("page13"))
         self.vboxlayout20 = QtGui.QVBoxLayout(self.page13)
         self.vboxlayout20.setObjectName(_fromUtf8("vboxlayout20"))
@@ -736,7 +736,7 @@ class Ui_Main_window(object):
         Main_window.setCentralWidget(self.widget)
 
         self.retranslateUi(Main_window)
-        self.tabWidget2.setCurrentIndex(1)
+        self.tabWidget2.setCurrentIndex(2)
         self.toolBox3_2.setCurrentIndex(0)
         self.toolBox2_2.setCurrentIndex(0)
         self.toolBox4_2.setCurrentIndex(0)
@@ -767,7 +767,7 @@ class Ui_Main_window(object):
         QtCore.QMetaObject.connectSlotsByName(Main_window)
 
     def retranslateUi(self, Main_window):
-        Main_window.setWindowTitle(QtGui.QApplication.translate("Main_window", "Gerix wifi cracker", None, QtGui.QApplication.UnicodeUTF8))
+        Main_window.setWindowTitle(QtGui.QApplication.translate("Main_window", "AirMode", None, QtGui.QApplication.UnicodeUTF8))
         self.textLabel1.setText(QtGui.QApplication.translate("Main_window", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600;\">Welcome to AirMode</span></p><p align=\"center\"><br/>Do you remember Gerix Wifi Cracker? We decided to fork and resume it in order<br/>to continue providing this fantastic software to everyone.</p><p align=\"center\"><br/>AirMode is a GUI that can help you to use the Aircrack framework.<br/></p><p align=\"center\"><span style=\" font-weight:600;\">Frozenbox Network (www.frozenbox.org)<br/>Parrot Security OS (www.parrotsec.org)</span></p><p align=\"center\"><span style=\" font-style:italic;\">The tool is under GPL 2 License. <br/>enJoy! </span><br/></p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
         self.tabWidget2.setTabText(self.tabWidget2.indexOf(self.tab), QtGui.QApplication.translate("Main_window", "Welcome", None, QtGui.QApplication.UnicodeUTF8))
         self.textLabel3_5_6_2_2.setText(QtGui.QApplication.translate("Main_window", "Select the <b>interface</b>:", None, QtGui.QApplication.UnicodeUTF8))
