@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=AirMode
+Encoding=UTF-8
+Exec=menuexecg airmode
+Icon=airmode-logo.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-01-wireless-tools;06-wireless-attacks;top10;
+X-Parrot-Package=airmode
