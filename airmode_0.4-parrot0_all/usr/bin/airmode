@@ -1,0 +1,5 @@
+#! /bin/sh
+
+cd /usr/share/airmode
+python ./airmode.py
+service NetworkManager restart

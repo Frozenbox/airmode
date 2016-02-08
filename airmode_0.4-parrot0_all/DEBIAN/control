@@ -1,0 +1,19 @@
+Package: airmode
+Version: 0.4-parrot0
+Architecture: all
+Maintainer: Lorenzo EclipseSparl Faletra <eclipse@frozenbox.org>
+Installed-Size: 501
+Depends: pyqt4-dev-tools, aircrack-ng, reaver, cowpatty, pyrit, python
+Recommends: wifi-honey
+Section: wireless
+Priority: optional
+Description: AirMode - WiFi cracking framework (aircrack interface)
+ Welcome to AirMode
+ Do you remember Gerix Wifi Cracker? We decided to fork and resume it in order
+ to continue providing this fantastic software to everyone.
+ AirMode is a GUI that can help you to use the Aircrack framework.
+ .
+ Frozenbox Network (www.frozenbox.org)
+ Parrot Security OS (www.parrotsec.org)
+ The tool is under GPL 2 License. 
+ enJoy! 
