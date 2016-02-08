@@ -692,7 +692,7 @@ class Main_window_ex(QMainWindow, Ui_Main_window):
             self.table_interfaces.removeRow(0)
         
         # load interfaces
-        airmon = commands.getoutput("airmon-ng | egrep -e '^[a-z]{2,4}[0-9]'")
+        airmon = commands.getoutput("airmon-ng  | egrep -e 'wlan[0-9]mon' | sed -e 's/phy[0-9]\t//g'")
         airmon = airmon.split('\n')
 
         for intf in airmon:
