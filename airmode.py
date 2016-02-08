@@ -264,7 +264,7 @@ class Main_window_ex(QMainWindow, Ui_Main_window):
             else:
                 self.output("Monitor off: " + self.periferica, status[0])
         else:
-            status = commands.getstatusoutput('airmon-ng stop '  + self.periferica + '; airmon-ng start ' + self.periferica)
+            status = commands.getstatusoutput('airmon-ng check kill && echo y | airmon-ng start ' + self.periferica)
             if status[0] != 0:
                 self.output(status[1], status[0])
             else:
@@ -692,7 +692,7 @@ class Main_window_ex(QMainWindow, Ui_Main_window):
             self.table_interfaces.removeRow(0)
         
         # load interfaces
-        airmon = commands.getoutput("airmon-ng  | egrep -e 'wlan[0-9]mon' | sed -e 's/phy[0-9]\t//g'")
+        airmon = commands.getoutput("airmon-ng  | egrep -e 'wlan[0-9]' | sed -e 's/phy[0-9]\t//g'")
         airmon = airmon.split('\n')
 
         for intf in airmon:

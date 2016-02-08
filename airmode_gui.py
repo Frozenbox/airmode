@@ -98,6 +98,7 @@ class Ui_Main_window(object):
         self.combo_channel.addItem(_fromUtf8(""))
         self.combo_channel.addItem(_fromUtf8(""))
         self.combo_channel.addItem(_fromUtf8(""))
+        self.combo_channel.addItem(_fromUtf8(""))
         self.hboxlayout.addWidget(self.combo_channel)
         self.textLabel2_4 = QtGui.QLabel(self.page1)
         self.textLabel2_4.setWordWrap(False)
@@ -396,6 +397,7 @@ class Ui_Main_window(object):
         self.button_wpa_test_inj.setObjectName(_fromUtf8("button_wpa_test_inj"))
         self.vboxlayout15.addWidget(self.button_wpa_test_inj)
         self.vboxlayout13.addWidget(self.buttonGroup2_2_2)
+
         ##############################################
         spacerItem6 = QtGui.QSpacerItem(41, 140, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         self.vboxlayout13.addItem(spacerItem6)
@@ -858,6 +860,7 @@ class Ui_Main_window(object):
         self.combo_channel.setItemText(11, QtGui.QApplication.translate("Main_window", "11", None, QtGui.QApplication.UnicodeUTF8))
         self.combo_channel.setItemText(12, QtGui.QApplication.translate("Main_window", "12", None, QtGui.QApplication.UnicodeUTF8))
         self.combo_channel.setItemText(13, QtGui.QApplication.translate("Main_window", "13", None, QtGui.QApplication.UnicodeUTF8))
+        self.combo_channel.setItemText(14, QtGui.QApplication.translate("Main_window", "14", None, QtGui.QApplication.UnicodeUTF8))
         self.textLabel2_4.setText(QtGui.QApplication.translate("Main_window", "Seconds:", None, QtGui.QApplication.UnicodeUTF8))
         self.button_rescan_networks.setText(QtGui.QApplication.translate("Main_window", "Rescan networks", None, QtGui.QApplication.UnicodeUTF8))
         self.button_reload_interfaces.setText(QtGui.QApplication.translate("Main_window", "Reload wireless interfaces", None, QtGui.QApplication.UnicodeUTF8))
